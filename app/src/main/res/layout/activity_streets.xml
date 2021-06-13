@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".StreetsActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/activity_appbar"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar"
+        android:layout_above="@id/bottom_navigation">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/appbar"
+            android:layout_above="@id/bottom_navigation">
+
+
+        <TextView
+            android:id="@+id/title_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jobs"
+            android:textColor="#FFC040"
+            android:layout_centerHorizontal="true"
+            android:textSize="24dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:layout_above="@id/appbar"
+            tools:ignore="NotSibling" />
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_question_mark_circle_svgrepo_com"/>
+
+        <RelativeLayout
+            android:id="@+id/first_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@id/title_1">
+
+            <TextView
+                android:id="@+id/job_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beg"
+                android:textColor="#FFC040"
+                android:textSize="28dp"/>
+
+            <TextView
+                android:id="@+id/job_title_subtext_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work the streets"
+                android:textSize="18dp"
+                android:textColor="#80C000"
+
+                android:layout_below="@id/job_title_1"/>
+
+            <Button
+                android:id="@+id/job_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work"
+                android:backgroundTint="#80C0FF"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/second_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@id/first_job">
+
+            <TextView
+                android:id="@+id/job_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play guitar"
+                android:textColor="#FFC040"
+                android:textSize="28dp"/>
+
+            <TextView
+                android:id="@+id/job_title_subtext_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guitar required"
+                android:textSize="18dp"
+                android:textColor="#80C000"
+
+                android:layout_below="@id/job_title_2"/>
+
+            <Button
+                android:id="@+id/job_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work"
+                android:backgroundTint="#80C0FF"
+                android:textColor="@color/black"
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/third_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@id/second_job">
+
+            <TextView
+                android:id="@+id/job_title_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Courier"
+                android:textColor="#FFC040"
+                android:textSize="28dp"/>
+
+            <TextView
+                android:id="@+id/job_title_subtext_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bicyle required"
+                android:textSize="18dp"
+                android:textColor="#80C000"
+
+                android:layout_below="@id/job_title_3"/>
+
+            <Button
+                android:id="@+id/job_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work"
+                android:backgroundTint="#80C0FF"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fourth_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@id/third_job">
+
+            <TextView
+                android:id="@+id/job_title_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Graffiti artist"
+                android:textColor="#FFC040"
+                android:textSize="28dp"/>
+
+            <TextView
+                android:id="@+id/job_title_subtext_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paint required"
+                android:textSize="18dp"
+                android:textColor="#80C000"
+
+                android:layout_below="@id/job_title_4"/>
+
+            <Button
+                android:id="@+id/job_button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work"
+                android:backgroundTint="#80C0FF"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/title_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Items"
+            android:layout_centerHorizontal="true"
+            android:textSize="24dp"
+            android:textColor="#FFC040"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:layout_below="@id/fourth_job"/>
+
+        <RelativeLayout
+            android:id="@+id/first_purchasable_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@id/title_2">
+
+            <TextView
+                android:id="@+id/item_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy guitar"
+                android:textColor="#FFC040"
+                android:textSize="28dp"/>
+
+            <TextView
+                android:id="@+id/item_title_subtext_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unlock playing guitar"
+                android:textSize="18dp"
+                android:textColor="#80C000"
+
+                android:layout_below="@id/item_title_1"/>
+
+            <Button
+                android:id="@+id/item_purchase_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#80C0FF"
+                android:textColor="@color/black"
+
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/item_purchase_button_1"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#ff8396"
+
+                android:paddingRight="8dp"
+                android:text="$150"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/second_purchasable_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@id/first_purchasable_item">
+
+            <TextView
+                android:id="@+id/item_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy bycicle"
+                android:textColor="#FFC040"
+                android:textSize="28dp"/>
+
+            <TextView
+                android:id="@+id/item_title_subtext_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unlock courier job"
+                android:textSize="18dp"
+                android:textColor="#80C000"
+
+                android:layout_below="@id/item_title_2"/>
+
+            <Button
+                android:id="@+id/item_purchase_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="#80C0FF"
+                android:textColor="@color/black"
+
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/item_purchase_button_2"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#ff8396"
+
+                android:paddingRight="8dp"
+                android:text="$500 + $1/day"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/third_purchasable_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@id/second_purchasable_item">
+
+            <TextView
+                android:id="@+id/item_title_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy paint"
+                android:textColor="#FFC040"
+                android:textSize="28dp"/>
+
+            <TextView
+                android:id="@+id/item_title_subtext_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unlock graffiti artist job"
+                android:textSize="18dp"
+                android:textColor="#80C000"
+
+                android:layout_below="@id/item_title_3"/>
+
+            <Button
+                android:id="@+id/item_purchase_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+
+                android:backgroundTint="#80C0FF"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/item_purchase_button_3"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#ff8396"
+
+                android:paddingRight="8dp"
+                android:text="$750 + $2/day"/>
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/title_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upgrades"
+            android:layout_centerHorizontal="true"
+            android:textSize="24dp"
+            android:paddingLeft="4dp"
+            android:textColor="#FFC040"
+            android:paddingTop="4dp"
+            android:layout_below="@id/third_purchasable_item"/>
+
+        <RelativeLayout
+            android:id="@+id/first_upgradable_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_3"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/item_upgrade_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy pets"
+                android:textColor="#FFC040"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/item_upgrade_subtext_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_upgrade_title_1"
+                android:text="+50% from begging"
+                android:textColor="#80C000"
+
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/upgrade_purchase_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+
+                android:layout_centerVertical="true"
+                android:backgroundTint="#80C0FF"
+
+                android:text="Purchase" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/upgrade_purchase_button_1"
+                android:paddingRight="8dp"
+                android:textColor="#ff8396"
+
+                android:text="$250" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/second_upgradable_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@id/first_upgradable_item">
+
+            <TextView
+                android:id="@+id/item_upgrade_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guitar lessons"
+                android:textColor="#FFC040"
+                android:textSize="28dp"/>
+
+            <TextView
+                android:id="@+id/item_upgrade_subtext_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+25% from playing guitar"
+                android:textSize="18dp"
+                android:textColor="#80C000"
+
+                android:layout_below="@id/item_upgrade_title_2"/>
+
+            <Button
+                android:id="@+id/upgrade_purchase_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase"
+                android:backgroundTint="#80C0FF"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/upgrade_purchase_button_2"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="8dp"
+                android:textColor="#ff8396"
+
+                android:text="$300"
+                />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/third_upgradable_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@id/second_upgradable_item">
+
+            <TextView
+                android:id="@+id/item_upgrade_title_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bike upgrades"
+                android:textColor="#FFC040"
+                android:textSize="28dp"/>
+
+            <TextView
+                android:id="@+id/item_upgrade_subtext_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+25% from courier jobs"
+                android:textSize="18dp"
+                android:textColor="#80C000"
+
+                android:layout_below="@id/item_upgrade_title_3"/>
+
+            <Button
+                android:id="@+id/upgrade_purchase_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase"
+                android:backgroundTint="#80C0FF"
+                android:textColor="@color/black"
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/job3_upgrade_subtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/upgrade_purchase_button_3"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#ff8396"
+
+                android:paddingRight="8dp"
+                android:text="$350"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fourth_upgradable_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@id/third_upgradable_item">
+
+            <TextView
+                android:id="@+id/item_upgrade_title_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Art lessons"
+                android:textColor="#FFC040"
+                android:textSize="28dp"/>
+
+            <TextView
+                android:id="@+id/item_upgrade_subtext_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+25% from graffiti artist job"
+                android:textSize="18dp"
+                android:textColor="#80C000"
+
+                android:layout_below="@id/item_upgrade_title_4"/>
+
+            <Button
+                android:id="@+id/upgrade_purchase_button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="#80C0FF"
+                android:textColor="@color/black"
+
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/job4_upgrade_subtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/upgrade_purchase_button_4"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#ff8396"
+
+                android:paddingRight="8dp"
+                android:text="$500"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:menu="@menu/bottom_navigation_menu"
+        android:background="#303030"
+        app:itemIconTint="#A9A9A9"
+        app:itemTextColor="#A9A9A9"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

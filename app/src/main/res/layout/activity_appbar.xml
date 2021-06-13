@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:paddingBottom="4dp">
+
+    <TextView
+        android:id="@+id/estimated_lifetime_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#ff8396"
+        android:textSize="18dp"
+        android:text="Estimated Lifetime"/>
+
+    <TextView
+        android:id="@+id/current_age_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:textColor="#ff8396"
+        android:textSize="18dp"
+        android:layout_below="@id/estimated_lifetime_text"
+        android:text="Current Age"/>
+
+    <TextView
+        android:id="@+id/estimated_lifetime_number_years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="9.5dp"
+        android:textSize="18dp"
+        android:textColor="#80C0FF"
+        android:layout_toRightOf="@+id/estimated_lifetime_text"
+        android:text="21. "/>
+
+    <TextView
+        android:id="@+id/estimated_lifetime_number_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="18dp"
+        android:textColor="#80C0FF"
+        android:layout_toRightOf="@+id/estimated_lifetime_number_years"
+        android:text="100"/>
+
+
+    <TextView
+        android:id="@+id/current_age_number_years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/current_age_text"
+        android:layout_marginLeft="63.8dp"
+        android:textSize="18dp"
+        android:textColor="#80C0FF"
+        android:layout_below="@id/estimated_lifetime_text"
+        android:text="19. "/>
+
+    <TextView
+        android:id="@+id/current_age_number_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/current_age_number_years"
+        android:layout_below="@id/estimated_lifetime_text"
+        android:textSize="18dp"
+        android:textColor="#80C0FF"
+        android:text="100"/>
+
+    <TextView
+        android:id="@+id/money_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_alignParentRight="true"
+        android:textSize="18dp"
+        android:textColor="#40C000"
+        android:text="Money"/>
+
+    <TextView
+        android:id="@+id/money_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/money_text"
+        android:layout_marginRight="4dp"
+        android:textSize="18dp"
+        android:textColor="#40C000"
+        android:text="$100"/>
+
+    <TextView
+        android:id="@+id/daily_costs_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Daily Costs"
+        android:textColor="#00C040"
+        android:layout_toLeftOf="@id/money_text"
+        android:paddingTop="4dp"
+        android:paddingRight="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/daily_costs_number"
+        android:layout_below="@id/daily_costs_text"
+        android:layout_toLeftOf="@id/money_number"
+        android:textSize="18dp"
+        android:textColor="#40C000"
+        android:text="$10"
+        android:layout_marginRight="50dp"/>
+
+
+    <TextView
+        android:id="@+id/information_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/current_age_text"
+        android:textColor="#1cba1c"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:text=""/>
+
+
+
+
+
+
+
+</RelativeLayout>

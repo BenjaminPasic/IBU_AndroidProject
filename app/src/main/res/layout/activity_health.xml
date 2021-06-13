@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".HealthActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/activity_appbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar"
+        android:layout_above="@id/bottom_navigation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/wrapper"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar"
+        android:layout_above="@id/bottom_navigation">
+
+    <TextView
+        android:id="@+id/title_1"
+        android:text="Home"
+        android:layout_below="@id/appbar"
+        android:textColor="#FFC040"
+
+        android:layout_centerHorizontal="true"
+        android:paddingTop="6dp"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/first_home"
+        android:layout_below="@id/title_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/first_home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="#FFC040"
+
+            android:layout_marginLeft="8dp"
+            android:text="Tent"/>
+
+        <TextView
+            android:id="@+id/first_home_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first_home_title"
+            android:layout_marginLeft="8dp"
+            android:textSize="18dp"
+            android:textColor="#80C000"
+
+            android:text="+3 months"/>
+
+        <Button
+            android:id="@+id/purchase_first_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:backgroundTint="#80C0FF"
+            android:layout_centerHorizontal="true"
+            android:text="Purchase"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff8396"
+
+            android:layout_toLeftOf="@id/purchase_first_home"
+            android:text="$75 + $2/day"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="8dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/second_home"
+        android:layout_below="@id/first_home"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/second_home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="#FFC040"
+
+            android:layout_marginLeft="8dp"
+            android:text="Room"/>
+
+        <TextView
+            android:id="@+id/second_home_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second_home_title"
+            android:layout_marginLeft="8dp"
+            android:textColor="#80C000"
+
+            android:textSize="18dp"
+            android:text="+6 months"/>
+
+        <Button
+            android:id="@+id/purchase_second_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:backgroundTint="#80C0FF"
+            android:layout_centerHorizontal="true"
+            android:text="Purchase"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/purchase_second_home"
+            android:textColor="#ff8396"
+
+            android:text="$150 + $5/day"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="8dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/third_home"
+        android:layout_below="@id/second_home"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/third_home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="#FFC040"
+
+            android:layout_marginLeft="8dp"
+            android:text="Apartment"/>
+
+        <TextView
+            android:id="@+id/third_home_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/third_home_title"
+            android:layout_marginLeft="8dp"
+            android:textSize="18dp"
+            android:textColor="#80C000"
+
+            android:text="+9 months"/>
+
+        <Button
+            android:id="@+id/purchase_third_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:backgroundTint="#80C0FF"
+            android:text="Purchase"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/purchase_third_home"
+            android:textColor="#ff8396"
+
+            android:text="$300 + $10/day"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="8dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fourth_home"
+        android:layout_below="@id/third_home"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fourth_home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="#FFC040"
+
+            android:layout_marginLeft="8dp"
+            android:text="Condo"/>
+
+        <TextView
+            android:id="@+id/fourth_home_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fourth_home_title"
+            android:textColor="#80C000"
+
+            android:layout_marginLeft="8dp"
+            android:textSize="18dp"
+            android:text="+12 months"/>
+
+        <Button
+            android:id="@+id/purchase_fourth_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:backgroundTint="#80C0FF"
+            android:text="Purchase"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/purchase_fourth_home"
+            android:textColor="#ff8396"
+
+            android:text="$600 + $20/day"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="8dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fifth_home"
+        android:layout_below="@id/fourth_home"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fifth_home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="#FFC040"
+
+            android:text="House"/>
+
+        <TextView
+            android:id="@+id/fifth_home_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fifth_home_title"
+            android:textColor="#80C000"
+
+            android:layout_marginLeft="8dp"
+            android:textSize="18dp"
+            android:text="+24 months"/>
+
+        <Button
+            android:id="@+id/purchase_fifth_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:text="Purchase"
+            android:textColor="@color/black"
+            android:backgroundTint="#80C0FF"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/purchase_fifth_home"
+            android:text="$1.5k + $50/day"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff8396"
+
+            android:layout_marginRight="8dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_2"
+        android:text="Food"
+        android:layout_below="@id/fifth_home"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="6dp"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:textColor="#FFC040"
+
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/dish_1"
+        android:layout_below="@id/title_2"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/first_dish_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="#FFC040"
+            android:text="Junk Food"/>
+
+        <TextView
+            android:id="@+id/first_dish_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first_dish_title"
+            android:layout_marginLeft="8dp"
+            android:textSize="18dp"
+            android:textColor="#80C000"
+
+
+            android:text="+3 months"/>
+
+        <Button
+            android:id="@+id/purchase_first_dish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:text="Purchase"
+            android:textColor="@color/black"
+            android:backgroundTint="#80C0FF"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/purchase_first_dish"
+            android:text="$75 + $2/day"
+            android:textColor="#ff8396"
+
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="8dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dish_2"
+        android:layout_below="@id/dish_1"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/second_dish_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="#FFC040"
+
+            android:text="Homecookin'"/>
+
+        <TextView
+            android:id="@+id/second_dish_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second_dish_title"
+            android:layout_marginLeft="8dp"
+            android:textSize="18dp"
+            android:textColor="#80C000"
+
+            android:text="+6 months"/>
+
+        <Button
+            android:id="@+id/purchase_second_dish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:backgroundTint="#80C0FF"
+            android:text="Purchase"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/purchase_second_dish"
+            android:textColor="#ff8396"
+
+            android:text="$150 + $5/day"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="8dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dish_3"
+        android:layout_below="@id/dish_2"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/third_dish_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="#FFC040"
+
+            android:text="Balanced"/>
+
+        <TextView
+            android:id="@+id/third_dish_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/third_dish_title"
+            android:layout_marginLeft="8dp"
+            android:textSize="18dp"
+            android:textColor="#80C000"
+
+            android:text="+9 months"/>
+
+        <Button
+            android:id="@+id/purchase_third_dish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:backgroundTint="#80C0FF"
+            android:text="Purchase"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/purchase_third_dish"
+            android:text="$300 + $10/day"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff8396"
+
+            android:layout_marginRight="8dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dish_4"
+        android:layout_below="@id/dish_3"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fourth_dish_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="#FFC040"
+
+            android:text="Organic"/>
+
+        <TextView
+            android:id="@+id/fourth_dish_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fourth_dish_title"
+            android:layout_marginLeft="8dp"
+            android:textSize="18dp"
+            android:textColor="#80C000"
+
+            android:text="+12 months"/>
+
+        <Button
+            android:id="@+id/purchase_fourth_dish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:text="Purchase"
+            android:textColor="@color/black"
+            android:backgroundTint="#80C0FF"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/purchase_fourth_dish"
+            android:text="$600 + $20/day"
+            android:layout_centerVertical="true"
+            android:textColor="#ff8396"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="8dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dish_5"
+            android:layout_below="@id/dish_4"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fifth_dish_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textColor="#FFC040"
+
+                android:layout_marginLeft="8dp"
+                android:text="Personal Chef"/>
+
+            <TextView
+                android:id="@+id/fifth_dish_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#80C000"
+
+                android:layout_below="@id/fifth_dish_title"
+                android:layout_marginLeft="8dp"
+                android:textSize="18dp"
+                android:text="+12 months"/>
+
+            <Button
+                android:id="@+id/purchase_fifth_dish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:backgroundTint="#80C0FF"
+                android:layout_centerHorizontal="true"
+                android:text="Purchase"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/purchase_fifth_dish"
+                android:textColor="#ff8396"
+
+                android:text="$1.5k + $50/day"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="8dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travel"
+            android:layout_below="@id/dish_5"
+            android:textSize="24dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFC040"
+
+            android:paddingTop="6dp"/>
+
+        <RelativeLayout
+            android:id="@+id/travel_1"
+            android:layout_below="@id/title_3"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/first_travel_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textColor="#FFC040"
+
+                android:layout_marginLeft="8dp"
+                android:text="Day Trip"/>
+
+            <TextView
+                android:id="@+id/first_travel_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/first_travel_title"
+                android:textColor="#80C000"
+
+                android:layout_marginLeft="8dp"
+                android:textSize="18dp"
+                android:text="+3 months"/>
+
+            <Button
+                android:id="@+id/purchase_first_vacation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:text="Travel"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"
+                android:backgroundTint="#80C0FF"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/purchase_first_vacation"
+                android:text="$100"
+                android:layout_centerVertical="true"
+                android:textColor="#ff8396"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="8dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/travel_2"
+            android:layout_below="@id/travel_1"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/second_travel_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFC040"
+
+                android:textSize="24dp"
+                android:layout_marginLeft="8dp"
+                android:text="Weekend"/>
+
+            <TextView
+                android:id="@+id/second_travel_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/second_travel_title"
+                android:textColor="#80C000"
+
+                android:layout_marginLeft="8dp"
+                android:textSize="18dp"
+                android:text="+6 months"/>
+
+            <Button
+                android:id="@+id/purchase_second_vacation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:text="Travel"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"
+                android:backgroundTint="#80C0FF"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/purchase_second_vacation"
+                android:text="$500"
+                android:textColor="#ff8396"
+
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="8dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/travel_3"
+            android:layout_below="@id/travel_2"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/third_travel_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFC040"
+
+                android:textSize="24dp"
+                android:layout_marginLeft="8dp"
+                android:text="Europe"/>
+
+            <TextView
+                android:id="@+id/third_travel_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/third_travel_title"
+                android:layout_marginLeft="8dp"
+                android:textColor="#80C000"
+
+                android:textSize="18dp"
+                android:text="+9 months"/>
+
+            <Button
+                android:id="@+id/purchase_third_vacation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:backgroundTint="#80C0FF"
+                android:text="Travel"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/purchase_third_vacation"
+                android:textColor="#ff8396"
+
+                android:text="$2.5k"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="8dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/travel_4"
+            android:layout_below="@id/travel_3"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fourth_travel_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textColor="#FFC040"
+
+                android:layout_marginLeft="8dp"
+                android:text="Bora Bora"/>
+
+            <TextView
+                android:id="@+id/fourth_travel_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fourth_travel_title"
+                android:textColor="#80C000"
+
+                android:layout_marginLeft="8dp"
+                android:textSize="18dp"
+                android:text="+12 months"/>
+
+            <Button
+                android:id="@+id/purchase_fourth_vacation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:text="Travel"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"
+                android:backgroundTint="#80C0FF"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/purchase_fourth_vacation"
+                android:text="$7.5k"
+                android:layout_centerVertical="true"
+                android:textColor="#ff8396"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="8dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/travel_5"
+            android:layout_below="@id/travel_4"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fifth_travel_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFC040"
+
+                android:textSize="24dp"
+                android:layout_marginLeft="8dp"
+                android:text="The World"/>
+
+            <TextView
+                android:id="@+id/fifth_travel_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fifth_travel_title"
+                android:layout_marginLeft="8dp"
+                android:textColor="#80C000"
+
+                android:textSize="18dp"
+                android:text="+24 months"/>
+
+            <Button
+                android:id="@+id/purchase_fifth_vacation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:text="Travel"
+                android:textColor="@color/black"
+                android:backgroundTint="#80C0FF"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/purchase_fifth_vacation"
+                android:textColor="#ff8396"
+
+                android:text="$50k"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="8dp"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:menu="@menu/bottom_navigation_menu"
+        android:background="#303030"
+        app:itemIconTint="#A9A9A9"
+        app:itemTextColor="#A9A9A9"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

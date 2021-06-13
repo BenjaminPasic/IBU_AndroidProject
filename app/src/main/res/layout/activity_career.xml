@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".CareerActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/activity_appbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar"
+        android:layout_above="@id/bottom_navigation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/wrapper"
+            android:layout_height="match_parent"
+            android:layout_below="@id/appbar"
+            android:layout_above="@id/bottom_navigation">
+
+
+            <TextView
+                android:id="@+id/title_1"
+                android:textColor="#FFC040"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Career"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="28dp"/>
+
+            <RelativeLayout
+                android:id="@+id/ged_exam"
+                android:layout_below="@id/title_1"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ged_exam_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#FFC040"
+                    android:layout_marginLeft="8dp"
+                    android:text="GED Exam"/>
+
+                <TextView
+                    android:id="@+id/ged_exam_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ged_exam_title"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18dp"
+                    android:textColor="#80C000"
+                    android:text="12 months | 0% Pass"/>
+
+                <Button
+                    android:id="@+id/attempt_ged_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#80C0FF"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Attempt"
+                    android:layout_marginRight="8dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/attempt_ged_button"
+                    android:text="$125 | 1 day"
+                    android:textColor="#ff8396"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="8dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/scholarship_exam"
+                android:layout_below="@id/ged_exam"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/scolarship_exam_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#FFC040"
+                    android:layout_marginLeft="8dp"
+                    android:text="Scholarship"/>
+
+                <TextView
+                    android:id="@+id/scholarship_exam_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/scolarship_exam_title"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18dp"
+                    android:textColor="#80C000"
+
+                    android:text="0% Pass | Free Bachelors"/>
+
+                <Button
+                    android:id="@+id/scholarship_exam_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#80C0FF"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    android:text="Attempt"
+                    android:layout_marginRight="8dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/scholarship_exam_days_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/scholarship_exam_button"
+                    android:text="1 Day | $50"
+                    android:textColor="#ff8396"
+
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="8dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upgrades"
+                android:textColor="#FFC040"
+
+                android:layout_below="@id/phd_degree"
+                android:layout_centerHorizontal="true"
+                android:textSize="28dp"/>
+
+            <RelativeLayout
+                android:id="@+id/ged_study"
+                android:layout_below="@id/title_2"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ged_study_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#FFC040"
+
+                    android:layout_marginLeft="8dp"
+                    android:text="Study for GED"/>
+
+                <TextView
+                    android:id="@+id/ged_study_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ged_study_title"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18dp"
+                    android:textColor="#80C000"
+
+                    android:text="+5% Chance to pass"/>
+
+                <Button
+                    android:id="@+id/study_ged_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Study"
+                    android:backgroundTint="#80C0FF"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    android:layout_marginRight="8dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/ged_day_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/study_ged_button"
+                    android:text="1 Day"
+                    android:textColor="#ff8396"
+
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="8dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bachelors_degree"
+                android:layout_below="@id/scholarship_exam"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/bachelors_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#FFC040"
+
+                    android:layout_marginLeft="8dp"
+                    android:text="Bachelors"/>
+
+                <TextView
+                    android:id="@+id/bachelors_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bachelors_title"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#80C000"
+
+                    android:textSize="18dp"
+                    android:text="+96 months"/>
+
+                <Button
+                    android:id="@+id/finish_bachelors_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="#80C0FF"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    android:text="Enroll"
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/bachelors_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/finish_bachelors_button"
+                    android:text="$54896"
+                    android:textColor="#ff8396"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/bachelors_loan_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bachelors_subtitle"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#80C000"
+
+                    android:text="Cost: 4 Years, +$37 Daily cost over 4 years"/>
+
+                <Button
+                    android:id="@+id/get_student_loan_bachelors_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:backgroundTint="#80C0FF"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    android:layout_marginRight="8dp"
+                    android:text="Pay with student loan"
+                    android:textSize="10dp"
+                    android:layout_below="@id/bachelors_loan_cost"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/masters_degree"
+                android:layout_below="@id/bachelors_degree"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/masters_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#FFC040"
+
+                    android:text="Masters"/>
+
+                <TextView
+                    android:id="@+id/masters_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/masters_title"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#80C000"
+                    android:textSize="18dp"
+                    android:text="+108 months"/>
+
+                <Button
+                    android:id="@+id/finish_masters_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Enroll"
+                    android:backgroundTint="#80C0FF"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/masters_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/finish_masters_button"
+                    android:text="$61126"
+                    android:textColor="#ff8396"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/masters_loan_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/masters_subtitle"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#80C000"
+
+                    android:text="Cost: 2 Years, +$82 Daily cost over 2 years"/>
+
+                <Button
+                    android:id="@+id/get_student_loan_masters_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Pay with student loan"
+                    android:backgroundTint="#80C0FF"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+
+                    android:layout_below="@id/masters_loan_cost"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/scholarship_study"
+                android:layout_below="@id/ged_study"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/scholarship_study_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#FFC040"
+
+                    android:layout_marginLeft="8dp"
+                    android:text="Study for Scholarship"/>
+
+                <TextView
+                    android:id="@+id/scholarship_study_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/scholarship_study_title"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18dp"
+                    android:textColor="#80C000"
+
+                    android:text="+1% Chance to pass"/>
+
+                <Button
+                    android:id="@+id/study_scholarship_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Study"
+                    android:backgroundTint="#80C0FF"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    android:layout_marginRight="8dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/scholarship_days_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/study_scholarship_button"
+                    android:text="1 Day"
+                    android:textColor="#ff8396"
+
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="8dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/promotion_rate_upgrade"
+                android:layout_below="@id/scholarship_study"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/promotion_upgrade_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#FFC040"
+
+                    android:layout_marginLeft="8dp"
+                    android:text="Work Late"/>
+
+                <TextView
+                    android:id="@+id/promotion_upgrade_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/promotion_upgrade_title"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18dp"
+                    android:textColor="#80C000"
+
+                    android:text="+25% Promotion rate"/>
+
+                <Button
+                    android:id="@+id/promotion_upgrade_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Work"
+                    android:backgroundTint="#80C0FF"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    android:layout_marginRight="8dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/promotion_upgrade_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/promotion_upgrade_button"
+                    android:text="1 Day"
+                    android:textColor="#ff8396"
+
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="8dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/phd_degree"
+                android:layout_below="@id/masters_degree"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/phd_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#FFC040"
+                    android:layout_marginLeft="8dp"
+                    android:text="PHD"/>
+
+                <TextView
+                    android:id="@+id/phd_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phd_title"
+                    android:layout_marginLeft="8dp"
+                    android:text="+120 months"
+
+                    android:textColor="#80C000"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/finish_phd_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Enroll"
+                    android:backgroundTint="#80C0FF"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/phd_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/finish_phd_button"
+                    android:text="$72202"
+                    android:textColor="#ff8396"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/phd_loan_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phd_subtitle"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#80C000"
+
+                    android:text="Cost: 4 Years, +$97 Daily cost over 4 years"/>
+
+                <Button
+                    android:id="@+id/get_student_loan_phd_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Pay with student loan"
+                    android:textSize="10dp"
+                    android:backgroundTint="#80C0FF"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    android:layout_below="@id/phd_loan_cost"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jobs"
+                android:textColor="#FFC040"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="28dp"
+                android:layout_below="@id/promotion_rate_upgrade"/>
+
+            <TextView
+                android:id="@+id/promotion_progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="#80C000"
+
+                android:layout_below="@+id/title_3"
+                android:text="Promotion Progress"/>
+
+            <ProgressBar
+                android:id="@+id/pBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/custom_progress_bar"
+                android:layout_below="@id/promotion_progress_text"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="6dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/fast_food_job"
+                android:layout_below="@id/pBar"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fast_food_job_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#FFC040"
+
+                    android:layout_marginLeft="8dp"
+                    android:text="Fast Food Crew"/>
+
+                <TextView
+                    android:id="@+id/fast_food_job_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fast_food_job_title"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18dp"
+                    android:textColor="#80C000"
+
+                    android:text="GED Req. | $40/day"/>
+
+                <Button
+                    android:id="@+id/fast_food_job_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Apply"
+                    android:backgroundTint="#80C0FF"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    android:layout_marginRight="8dp"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sales_rep_job"
+                android:layout_below="@id/fast_food_job"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sales_rep_job_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#FFC040"
+                    android:layout_marginLeft="8dp"
+                    android:text="Sales Rep"/>
+
+                <TextView
+                    android:id="@+id/sales_rep_job_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#80C000"
+
+                    android:layout_below="@id/sales_rep_job_title"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18dp"
+                    android:text="Bachelors Req. | $70/day"/>
+
+                <Button
+                    android:id="@+id/sales_rep_job_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Apply"
+                    android:backgroundTint="#80C0FF"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    android:layout_marginRight="8dp"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/business_assoc_job"
+                android:layout_below="@id/sales_rep_job"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/business_assoc_job_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#FFC040"
+
+                    android:text="Business Associate"/>
+
+                <TextView
+                    android:id="@+id/business_assoc_job_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#80C000"
+                    android:layout_below="@id/business_assoc_job_title"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18dp"
+                    android:text="Masters Req. | $120/day"/>
+
+                <Button
+                    android:id="@+id/business_assoc_job_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Apply"
+
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:backgroundTint="#80C0FF"
+                    android:layout_marginRight="8dp"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/researcher_job"
+                android:layout_below="@id/business_assoc_job"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/researcher_job_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#FFC040"
+                    android:text="Researcher"/>
+
+                <TextView
+                    android:id="@+id/researcher_job_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#80C000"
+                    android:layout_below="@id/researcher_job_title"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18dp"
+                    android:text="PHD Req. | $200/day"/>
+
+                <Button
+                    android:id="@+id/researcher_job_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Apply"
+
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:backgroundTint="#80C0FF"
+                    android:layout_marginRight="8dp"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        android:background="#303030"
+        app:itemIconTint="#A9A9A9"
+        app:itemTextColor="#A9A9A9"
+        app:menu="@menu/bottom_navigation_menu"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
